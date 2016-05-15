@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Flickcurl
+Description: Flickr API Library
+Version: 1.26
+Libs: -L${libdir} -lflickcurl
+Libs.private:  -L/opt/local/lib -lxml2 -lz -lpthread -liconv -lm -lcurl
+Cflags: -I${includedir}
+Requires:
+
