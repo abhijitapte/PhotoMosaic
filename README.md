@@ -12,19 +12,19 @@ An image provider helper class has been added that takes care of the tiling need
 Flickr provides a library called `FlickrCurl` [https://www.flickr.com/services/api/] that abstracts fetching, querying images. But inorder to use these services, one needs an API key and an API secret. This can be applied via https://www.flickr.com/services/apps/create/apply/? 
 
 The application expects three command line arguments to be supplied:
-1) API key (obtained from Flickr)
-2) API secret (obtained from Flickr)
-3) Search string
+1. API key (obtained from Flickr)
+2. API secret (obtained from Flickr)
+3. Search string
 
 ## Steps
 
 Note: The ones that have been completed have been striked out.
 
-1) Fetch the source image (capture new or supply existing image)
-~~2) Query for images from image provider~~
-3) Download the images from image provider
-4) Find nearest neighbor for each unit in source image and replace it with the nearest neighbor found.
-5) Stich the photo back and write the image back to disk.
+1. Fetch the source image (capture new or supply existing image)
+2. ~~Query for images from image provider~~
+3. Download the images from image provider
+4. Find nearest neighbor for each unit in source image and replace it with the nearest neighbor found.
+5. Stich the photo back and write the image back to disk.
 
 
 
