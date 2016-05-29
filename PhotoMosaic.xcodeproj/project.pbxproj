@@ -10,10 +10,10 @@
 		0144589E1CE7D3A500EACA47 /* FlickrImageProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0144589A1CE7D3A500EACA47 /* FlickrImageProvider.cpp */; };
 		0144589F1CE7D3A500EACA47 /* ImageProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0144589C1CE7D3A500EACA47 /* ImageProvider.cpp */; };
 		014458A11CE7D3B200EACA47 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 014458A01CE7D3B200EACA47 /* main.cpp */; };
-		014458A51CE7D3D900EACA47 /* libflickcurl.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014458A31CE7D3D900EACA47 /* libflickcurl.0.dylib */; };
-		014458A61CE7D3D900EACA47 /* libflickcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014458A41CE7D3D900EACA47 /* libflickcurl.dylib */; };
-		014458A71CE7D40200EACA47 /* libflickcurl.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 014458A31CE7D3D900EACA47 /* libflickcurl.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		014458A81CE7D40200EACA47 /* libflickcurl.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 014458A41CE7D3D900EACA47 /* libflickcurl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		01A106EA1CE8688E00B40E83 /* libflickcurl.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A106E81CE8688E00B40E83 /* libflickcurl.0.dylib */; };
+		01A106EB1CE8688E00B40E83 /* libflickcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A106E91CE8688E00B40E83 /* libflickcurl.dylib */; };
+		01A358211CE8E0C00051C3A2 /* libflickcurl.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01A106E81CE8688E00B40E83 /* libflickcurl.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		01A358221CE8E0C00051C3A2 /* libflickcurl.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01A106E91CE8688E00B40E83 /* libflickcurl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				014458A71CE7D40200EACA47 /* libflickcurl.0.dylib in CopyFiles */,
-				014458A81CE7D40200EACA47 /* libflickcurl.dylib in CopyFiles */,
+				01A358211CE8E0C00051C3A2 /* libflickcurl.0.dylib in CopyFiles */,
+				01A358221CE8E0C00051C3A2 /* libflickcurl.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +37,8 @@
 		0144589D1CE7D3A500EACA47 /* ImageProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ImageProvider.hpp; path = PhotoMosaic/Tiles/ImageProvider.hpp; sourceTree = "<group>"; };
 		014458A01CE7D3B200EACA47 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = PhotoMosaic/main.cpp; sourceTree = "<group>"; };
 		014458A21CE7D3C400EACA47 /* flickcurl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flickcurl.h; path = PhotoMosaic/Tiles/flickcurl/include/flickcurl.h; sourceTree = "<group>"; };
-		014458A31CE7D3D900EACA47 /* libflickcurl.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libflickcurl.0.dylib; path = PhotoMosaic/Tiles/flickcurl/libs/libflickcurl.0.dylib; sourceTree = "<group>"; };
-		014458A41CE7D3D900EACA47 /* libflickcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libflickcurl.dylib; path = PhotoMosaic/Tiles/flickcurl/libs/libflickcurl.dylib; sourceTree = "<group>"; };
+		01A106E81CE8688E00B40E83 /* libflickcurl.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libflickcurl.0.dylib; path = PhotoMosaic/Tiles/flickcurl/libs/libflickcurl.0.dylib; sourceTree = "<group>"; };
+		01A106E91CE8688E00B40E83 /* libflickcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libflickcurl.dylib; path = PhotoMosaic/Tiles/flickcurl/libs/libflickcurl.dylib; sourceTree = "<group>"; };
 		01C5E4F31CE7D2B300057BAB /* PhotoMosaic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhotoMosaic; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,14 +47,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014458A61CE7D3D900EACA47 /* libflickcurl.dylib in Frameworks */,
-				014458A51CE7D3D900EACA47 /* libflickcurl.0.dylib in Frameworks */,
+				01A106EB1CE8688E00B40E83 /* libflickcurl.dylib in Frameworks */,
+				01A106EA1CE8688E00B40E83 /* libflickcurl.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A358231CE8E20A0051C3A2 /* TileSupplier */ = {
+			isa = PBXGroup;
+			children = (
+				0144589A1CE7D3A500EACA47 /* FlickrImageProvider.cpp */,
+				0144589B1CE7D3A500EACA47 /* FlickrImageProvider.hpp */,
+				0144589C1CE7D3A500EACA47 /* ImageProvider.cpp */,
+				0144589D1CE7D3A500EACA47 /* ImageProvider.hpp */,
+				01D5737F1CE7B1DE0090939E /* flickcurl */,
+			);
+			name = TileSupplier;
+			sourceTree = "<group>";
+		};
 		01AC43F41CE798FA00510018 = {
 			isa = PBXGroup;
 			children = (
@@ -80,18 +92,6 @@
 			path = KDTree;
 			sourceTree = "<group>";
 		};
-		01AC440A1CE7A0CA00510018 /* Tiles */ = {
-			isa = PBXGroup;
-			children = (
-				0144589A1CE7D3A500EACA47 /* FlickrImageProvider.cpp */,
-				0144589B1CE7D3A500EACA47 /* FlickrImageProvider.hpp */,
-				0144589C1CE7D3A500EACA47 /* ImageProvider.cpp */,
-				0144589D1CE7D3A500EACA47 /* ImageProvider.hpp */,
-				01D5737F1CE7B1DE0090939E /* flickcurl */,
-			);
-			name = Tiles;
-			sourceTree = "<group>";
-		};
 		01D5737F1CE7B1DE0090939E /* flickcurl */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				014458A01CE7D3B200EACA47 /* main.cpp */,
+				01A358231CE8E20A0051C3A2 /* TileSupplier */,
 				01AC43FF1CE798FA00510018 /* PhotoMosaic */,
-				01AC440A1CE7A0CA00510018 /* Tiles */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -113,8 +113,8 @@
 		01D573821CE7B2340090939E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				014458A31CE7D3D900EACA47 /* libflickcurl.0.dylib */,
-				014458A41CE7D3D900EACA47 /* libflickcurl.dylib */,
+				01A106E81CE8688E00B40E83 /* libflickcurl.0.dylib */,
+				01A106E91CE8688E00B40E83 /* libflickcurl.dylib */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -154,6 +154,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 01AC43F41CE798FA00510018;
 			productRefGroup = 01AC43FE1CE798FA00510018 /* Products */;
@@ -272,7 +273,6 @@
 				LD_DYLIB_INSTALL_NAME = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/KDTree/Tiles/flickcurl/libs",
 					"$(PROJECT_DIR)/PhotoMosaic/Tiles/flickcurl/libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +291,6 @@
 				LD_DYLIB_INSTALL_NAME = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/KDTree/Tiles/flickcurl/libs",
 					"$(PROJECT_DIR)/PhotoMosaic/Tiles/flickcurl/libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

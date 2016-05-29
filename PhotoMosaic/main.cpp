@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  KDTree
-//
-//  Created by Abhijit Apte on 14/05/16.
-//  Copyright © 2016 Abhijit Apte. All rights reserved.
-//
 
 #include <iostream>
 #include "Tiles/FlickrImageProvider.hpp"
@@ -20,13 +13,10 @@ int main(int argc, const char * argv[]) {
     std::string apiSecret = argv[2];
     std::string searchString = argv[3];
     
-    Tiles::FlickrImageProvider flickrImageProvider(
-                                    apiKey,
-                                    apiSecret,
-                                    searchString);
+    std::shared_ptr<ImageProvider> imageProvider = std::make_shared<FlickrImageProvider>(apiKey, apiSecret, searchString);
     
     std::vector<std::string> imagePaths;
-    flickrImageProvider.GatherImages(imagePaths);
+    imageProvider->GatherImages(imagePaths);
     
     return 0;
 }
